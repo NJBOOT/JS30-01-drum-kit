@@ -82,7 +82,10 @@ keys.forEach((key) => {
     })
 
 </script>
-
+<!-- A quick answer to your question is that playSound and removeTransition 
+  without the () are references (pointing) to the function. 
+  addEventListener("keydown", playSound) is telling the listener to use the function referenced by playSound 
+  . the call playSound(event) is made by the listener -->
 
 </body>
 </html>
